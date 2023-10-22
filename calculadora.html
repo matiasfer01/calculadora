@@ -1,53 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
-    <head>
-        <meta  charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge"> 
-        <meta name="viewport" content="width=devic-width, initial-scale=1.0"> 
-        <title>Calculadora</title> 
+<html>
 
-        <style>
-            boby {
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <input id ="num" type="number">
-        <div>
-            <button onclick="pon(1)">1</button>
-            <button onclick="pon(2)">2</button>
-            <button onclick="pon(3)">3</button>
-        </div>
-        <div>
-            <button onclick="pon(4)">4</button>
-            <button onclick="pon(5)">5</button>
-            <button onclick="pon(6)">6</button>
-        </div>
-        <div>
-            <button onclick="pon(7)">7</button>
-            <button onclick="pon(8)">8</button>
-            <button onclick="pon(9)">9</button>
-        </div>
-        <div>
-            <button onclick="quitar()">🚽</button>
-            <button onclick="pon(0)">0</button>
-            <button onclick="pon()">C</button>
-        </div>
+<head>
+    <meta charset="UTF-8" />
+    <link type="text/css" href="index.css" rel="stylesheet">
+    <title>Calculadora con javascript y css</title>
+</head>
 
-        <script>
-            const num = document.getElementById('num')
-            function pon(digito){
-                num.value +=digito
-            } 
+<body>
 
-            function quitar(){
-                num.value = num.value.substr(0,num.value.length -1)
-            }
-            function borrar(){
-            num.value=''
-            }
-        </script>
-    </body>
+    <div class="Calculadora">
+        <input id="resultado">
+        <div class="bnt">
+            <button id="simbolos" onclick="quitar()">C</button>
+            <button id="simbolos" onclick="pon('/')">/</button>
+            <button id="simbolos" onclick="pon('x')">*</button>
+            <button id="simbolos" onclick="pon('-')">-</button>
+            <button onclick="pon(7)">7️</button>
+            <button onclick="pon(8)">8️</button>
+            <button onclick="pon(9)">9️</button>
+            <button id="mas" onclick="pon('+')">+</button>
+            <button onclick="pon(4)">4️</button>
+            <button onclick="pon(5)">5️</button>
+            <button onclick="pon(6)">6️</button>
+            <button onclick="pon(1)">1️</button>
+            <button onclick="pon(2)">2️</button>
+            <button onclick="pon(3)">3️</button>
+            <button id="igual" onclick="resultado()">=</button>
+            <button id="cero" onclick="pon(0)">0️</button>
+            <button id="punto" onclick="pon('.')">.</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 
 </html>

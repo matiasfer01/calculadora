@@ -1,0 +1,78 @@
+* {
+    font-size: 1em;
+    color: rgb(243, 238, 238);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(to left, rgb(220, 50, 129), rgb(227, 61, 61));
+    min-height: 100vh;
+    overflow: hidden;
+    color: #fdf3f3;
+}
+
+.Calculadora {
+    border-radius: 10px;
+    padding: 20px;
+    width: 340px;
+    height: 430px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+button {
+    padding: 1.5rem .5rem;
+    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fdf3f3;
+}
+
+
+.bnt {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+#simbolos {
+    background: rgba(34, 34, 34, 0.75);
+}
+
+#cero {
+    grid-column: span 2;
+
+}
+
+#igual {
+    grid-row: span 2;
+    background: rgba(34, 34, 34, 0.75);
+
+}
+
+#mas{
+    grid-row: span 2;
+    background: rgba(34, 34, 34, 0.75);
+
+}
+#punto{
+    background: rgba(34, 34, 34, 0.75);
+}
+
+
+#resultado {
+    display: block;
+    text-align: right;
+    font-size: 40px;
+    margin-bottom: 1%;
+    width: 332px;
+    height: 50px;
+    line-height: 100px;
+    background-color: #211e1e;
+}
